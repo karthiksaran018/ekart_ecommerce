@@ -1,46 +1,57 @@
-<<<<<<< HEAD
-# ekart_ecommerce
-=======
-# Ecommerce-Website-College-Project
-Final Year Project for students as Ecommerce website especially different webpages. Top class Website Development project that made by combination of front end programming languages such as HTML, CSS &amp; JS.
+# EKART Ecommerce
 
-Tech : HTML & CSS
+EKART is a modern and responsive ecommerce website tailored to provide users with an exceptional shopping experience. This project was developed using HTML, CSS, and JavaScript with a focus on intuitive UI/UX design and performance optimization.
 
-### Click on play button see Demo:
+---
 
-https://user-images.githubusercontent.com/28294942/137707143-5db5ccac-f475-42b5-9065-0788094b70db.mov
+## Features
 
+- **Responsive Design:** Optimized for various devices including desktops, tablets, and mobile phones.
+- **Modern UI:** Elegant design with default company colors (#e9f2f9, #0073b6, and #ef7c00).
+- **User-Friendly Navigation:** Clear and concise navigation for easy browsing.
+- **Product Pages:** Showcase products with hover effects, ratings, and pricing.
+- **Interactive Animations:** Smooth transitions and hover animations for an engaging experience.
+- **Login and Signup:** Fully functional authentication system with a sleek design.
 
+---
 
-**You Can use this Beautiful Project for your college Project and get good marks too.**
+## Demo
 
-Email me Now **vatshayan007@gmail.com** to get this Full Project Code, PPT, Report, Synopsis, Video Presentation and Research paper of this Project.
+Access the live demo of the project hosted on GitHub Pages:
 
-💌 Feel free to contact me for any kind of help on any projects.
- 
-### HOW TO RUN THE PROJECT-
-⚡ Email me at **vatshayan007@gmail.com** to get a detailed Guide report with Code to run the project with source Code.
+[EKART Live Demo](https://karthiksaran018.github.io/ekart_ecommerce/)
 
-### Need Code, Documents & Explanation video ? 
+---
 
-## How to Reach me :
+## Technologies Used
 
-### Mail : vatshayan007@gmail.com 
+- **Frontend:** HTML, CSS, JavaScript
+- **Frameworks:** Bootstrap 4.5
+- **Animations:** CSS Keyframes and Transitions
 
-### WhatsApp: **+91 9310631437** (Helping 24*7) **[CHAT](https://wa.me/message/CHWN2AHCPMAZK1)** 
+---
 
-### Website : https://www.finalproject.in/
+## How to Run
 
-### 1000 Computer Science Projects : https://www.computer-science-project.in/
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/karthiksaran018/ekart_ecommerce.git
+Navigate to the project directory:
 
-### More Web Dev Project : https://youtube.com/playlist?list=PL5g-9zkOohaFVr4-D344gUd-2vGMot-18&si=7Z--kjOJghZno4bv
+bash
+Copy code
+cd ekart_ecommerce
+Open index.html in your preferred browser to explore the website.
 
-Mail/Message me for Projects Help 🙏🏻
+Contributions
+Feel free to contribute to the project by submitting issues or pull requests. For any inquiries, contact us at:
 
-### Liked Project?
-If you Like Idea/ Research Paper/Project then Mail or Click on Star button🙏🏻
+Email: imsaran018@gmail.com
 
-**This is Open Source Web development Project**
+Contact Us
+Developed by:
+EKART Ecommerce Team
 
-### Web Development Projects Playlist : https://youtube.com/playlist?list=PL5g-9zkOohaFVr4-D344gUd-2vGMot-18
->>>>>>> a38523d (Initial commit for hosting)
+Contact Email: imsaran018@gmail.com
+GitHub: karthiksaran018
+
