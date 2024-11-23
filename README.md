@@ -25,7 +25,7 @@ Access the live demo of the project hosted on GitHub Pages:
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS
 - **Frameworks:** Bootstrap 4.5
 - **Animations:** CSS Keyframes and Transitions
 
