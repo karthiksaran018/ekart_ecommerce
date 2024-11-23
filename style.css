@@ -1,0 +1,349 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212; /* Deep black background */
+    color: #fff; /* Default white text color */
+    overflow-x: hidden;
+    overflow-y: scroll; /* Force scrollbar to be present always */
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9); /* Slight transparency */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.navbar .logo img {
+    height: 60px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 30px;
+    position: relative;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffd700; /* Golden hover effect */
+    text-decoration: none;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: #ffd700;
+    transition: width 0.4s ease;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.menu-icon {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+/* Hero Section */
+.header {
+    background: linear-gradient(135deg, #1a1a1a, #000);
+    text-align: center;
+    padding: 150px 20px;
+    color: #ffffff;
+    background-size: cover;
+    position: relative;
+    margin-top: 80px;
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-shadow: 0px 3px 15px rgba(255, 215, 0, 0.7);
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+.header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+.btn-main {
+    display: inline-block;
+    background: #ffd700;
+    color: #121212;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+}
+.btn-main:hover {
+    background: #ffc107;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7);
+}
+
+/* Product Cards */
+.small-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+h2.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 50px;
+    position: relative;
+}
+h2.title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #ffd700;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-4 {
+    flex-basis: 22%;
+    margin-bottom: 30px;
+    text-align: center;
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(255, 215, 0, 0.7);
+}
+.col-4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.col-4:hover img {
+    transform: scale(1.1);
+}
+.col-4 h5 {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.rating .fa {
+    color: #ffd700;
+}
+.price_name {
+    color: #ffd700;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Brands Section */
+.brands {
+    background: #121212; /* Dark background */
+    padding: 30px 0;
+    overflow: hidden; /* Prevent overflow outside the container */
+}
+.brands .small-container {
+    display: flex; /* Flexbox ensures a single row */
+    justify-content: start; /* Align logos from the start */
+    align-items: center; /* Center logos vertically */
+    gap: 40px; /* Space between logos */
+    animation: scrollRow 20s linear infinite; /* Continuous scrolling animation */
+    white-space: nowrap; /* Prevent logos from wrapping to a new line */
+}
+.brands .small-container img {
+    max-width: 150px; /* Logo size */
+    height: auto;
+    display: inline-block; /* Ensure logos behave as inline elements */
+    filter: grayscale(100%); /* Grayscale effect by default */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 0 10px; /* Space between logos */
+}
+.brands .small-container img:hover {
+    filter: grayscale(0); /* Full color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Scrolling Animation */
+@keyframes scrollRow {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move all logos off-screen */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .brands .small-container img {
+        max-width: 80px; /* Smaller logos for mobile */
+        margin: 0 5px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: #0d0d0d; /* Dark background for a sleek look */
+    color: #fff; /* White text color */
+    padding: 50px 90px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.footer h3 {
+    font-size: 18px;
+    color: #ffd700; /* Golden color for headings */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer p {
+    color: #bbbbbb; /* Light grey for paragraph text */
+    margin-bottom: 20px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+.footer ul li a {
+    color: #bbbbbb; /* Light grey links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer ul li a:hover {
+    color: #ffd700; /* Golden hover effect */
+}
+.footer .app-icons a img {
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.footer .app-icons a img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+.footer .social-links {
+    display: flex;
+    gap: 15px;
+}
+.footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #1a1a1a; /* Slightly lighter background */
+    color: #ffd700; /* Golden icons */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+}
+.footer .social-links a:hover {
+    background: #ffd700; /* Golden background on hover */
+    color: #0d0d0d; /* Invert icon color */
+    transform: scale(1.2); /* Zoom effect */
+}
+.footer hr {
+    border: none;
+    height: 1px;
+    background: #333; /* Subtle divider */
+    margin: 20px 0;
+}
+.footer .copyright {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-col {
+        margin-bottom: 30px;
+    }
+    .footer .social-links {
+        justify-content: center;
+    }
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .footer-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
